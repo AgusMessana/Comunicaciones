@@ -2,14 +2,14 @@ Datos:
 srv1 -> DNS (53 UDP/TCP)
 srv2 -> DNS y WEB (80, 443 TCP)
 
-***DMZ hacia Internet -> permitido
+DMZ hacia Internet -> permitido
 DMZ hacia LAN -> db puerto 3306 TCP. Lo demás prohibido.
-***LAN hacia srv1 -> 53 UDP/TCP
-***LAN hacia srv2 -> 53 UDP/TCP, 80 TCP, 443 TCP
-***LAN hacia DMZ -> prohibido salvo lo alcarado de srv1 y srv2.
-***LAN hacia Interent -> 80 TCP, 443 TCP. Lo demás prohibido. Hacer SNAT.
-***db hacia DMZ -> prohibido.
-***db hacia Internet -> prhibido
+LAN hacia srv1 -> 53 UDP/TCP
+LAN hacia srv2 -> 53 UDP/TCP, 80 TCP, 443 TCP
+LAN hacia DMZ -> prohibido salvo lo alcarado de srv1 y srv2.
+LAN hacia Interent -> 80 TCP, 443 TCP. Lo demás prohibido. Hacer SNAT.
+db hacia DMZ -> prohibido.
+db hacia Internet -> prhibido
 
 ------------------------------------------------------------------------
 
